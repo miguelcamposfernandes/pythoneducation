@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-<title>Chapter 2 – Conditional Execution – PythonEducation</title>
+<title>Chapter 3 – Functions – PythonEducation</title>
 <meta name="robots" content="max-image-preview:large">
 <link rel="dns-prefetch" href="//fonts.googleapis.com">
 <link rel="dns-prefetch" href="//s.w.org">
@@ -44,10 +44,7 @@ html{font-size:112.5%;}a,.page-title{color:#1e2428;}a:hover,a:focus{color:#1579e
 
 
 
-          <style>
-          .has-post-thumbnail img.wp-post-image, 
-          .attachment-twentyseventeen-featured-image.wp-post-image { display: none !important; }          
-          </style>
+
 <link rel="preload" as="style" href="https://pythoneducation.org/wp-content/plugins/code-prettify/prettify/prettify.css"><link rel="icon" href="https://pythoneducation.org/wp-content/uploads/2021/01/cropped-768px-Python-logo-notext.svg-32x32.png" sizes="32x32">
 <link rel="icon" href="https://pythoneducation.org/wp-content/uploads/2021/01/cropped-768px-Python-logo-notext.svg-192x192.png" sizes="192x192">
 <link rel="apple-touch-icon" href="https://pythoneducation.org/wp-content/uploads/2021/01/cropped-768px-Python-logo-notext.svg-180x180.png">
@@ -63,7 +60,7 @@ html{font-size:112.5%;}a,.page-title{color:#1e2428;}a:hover,a:focus{color:#1579e
 }		</style>
 		</head>
 
-<body itemtype="https://schema.org/Blog" itemscope="itemscope" class="post-template-default single single-post postid-803 single-format-standard wp-custom-logo ehf-footer ehf-template-astra ehf-stylesheet-astra ast-desktop ast-separate-container ast-two-container ast-no-sidebar astra-2.6.2 ast-header-custom-item-inside ast-blog-single-style-1 ast-single-post ast-mobile-inherit-site-logo ast-replace-site-logo-transparent ast-inherit-site-logo-transparent ast-normal-title-enabled elementor-default elementor-kit-505 elementor-page elementor-page-803">
+<body itemtype="https://schema.org/Blog" itemscope="itemscope" class="post-template-default single single-post postid-945 single-format-standard wp-custom-logo ehf-footer ehf-template-astra ehf-stylesheet-astra ast-desktop ast-separate-container ast-two-container ast-no-sidebar astra-2.6.2 ast-header-custom-item-inside ast-blog-single-style-1 ast-single-post ast-mobile-inherit-site-logo ast-replace-site-logo-transparent ast-inherit-site-logo-transparent ast-normal-title-enabled elementor-default elementor-kit-505 elementor-page elementor-page-945">
 
 <div class="hfeed site" id="page">
 	<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
@@ -130,18 +127,21 @@ html{font-size:112.5%;}a,.page-title{color:#1e2428;}a:hover,a:focus{color:#1579e
 					
 					
 
-<article class="post-803 post type-post status-publish format-standard has-post-thumbnail hentry category-uncategorized tag-23 tag-alternative-excution tag-boolean-operators tag-chained-conditionals tag-chapter-2 tag-conditional-execution tag-logical-operators tag-nested-conditionals tag-python tag-try-and-except ast-article-single" id="post-803" itemtype="https://schema.org/CreativeWork" itemscope="itemscope">
+<article class="post-945 post type-post status-publish format-standard hentry category-uncategorized ast-article-single" id="post-945" itemtype="https://schema.org/CreativeWork" itemscope="itemscope">
 
 	
 	
-<div class="ast-post-format- single-layout-1">
+<div class="ast-post-format- ast-no-thumb single-layout-1">
 
 	
-	<header class="entry-header ">
+	<header class="entry-header ast-no-thumbnail">
 
 		
-		<div class="post-thumb-img-content post-thumb"><img width="300" height="300" src="https://pythoneducation.org/wp-content/uploads/2021/01/2.png" class="attachment-large size-large wp-post-image" alt="" loading="lazy" itemprop="image" srcset="https://pythoneducation.org/wp-content/uploads/2021/01/2.png 300w,https://pythoneducation.org/wp-content/uploads/2021/01/2-150x150.png 150w" sizes="(max-width: 300px) 100vw, 300px"></div>		<div class="ast-single-post-order">
-			<h1 class="entry-title" itemprop="headline">Chapter 2 – Conditional Execution</h1><div class="entry-meta"><span class="cat-links"><a href="https://pythoneducation.org/category/uncategorized/" rel="category tag">Uncategorized</a></span> / By <span class="posted-by vcard author" itemtype="https://schema.org/Person" itemscope="itemscope" itemprop="author">			<a title="View all posts by mig" href="https://pythoneducation.org/author/mig/" rel="author" class="url fn n" itemprop="url">
+				<div class="ast-single-post-order">
+			<h1 class="entry-title" itemprop="headline">Chapter 3 – Functions</h1><div class="entry-meta">			<span class="comments-link">
+				<a href="https://pythoneducation.org/chapter-3-functions/#respond">Leave a Comment</a>			</span>
+
+			 / <span class="cat-links"><a href="https://pythoneducation.org/category/uncategorized/" rel="category tag">Uncategorized</a></span> / By <span class="posted-by vcard author" itemtype="https://schema.org/Person" itemscope="itemscope" itemprop="author">			<a title="View all posts by mig" href="https://pythoneducation.org/author/mig/" rel="author" class="url fn n" itemprop="url">
 				<span class="author-name" itemprop="name">mig</span>
 			</a>
 		</span>
@@ -155,29 +155,24 @@ html{font-size:112.5%;}a,.page-title{color:#1e2428;}a:hover,a:focus{color:#1579e
 	<div class="entry-content clear" itemprop="text">
 
 		
-				<div data-elementor-type="wp-post" data-elementor-id="803" class="elementor elementor-803" data-elementor-settings="[]">
+				<div data-elementor-type="wp-post" data-elementor-id="945" class="elementor elementor-945" data-elementor-settings="[]">
 						<div class="elementor-inner">
 							<div class="elementor-section-wrap">
-							<section class="elementor-section elementor-top-section elementor-element elementor-element-7aaa2b2 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="7aaa2b2" data-element_type="section">
+							<section class="elementor-section elementor-top-section elementor-element elementor-element-1c9f37c elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="1c9f37c" data-element_type="section">
 						<div class="elementor-container elementor-column-gap-default">
 							<div class="elementor-row">
-					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-6bc6634" data-id="6bc6634" data-element_type="column">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-d45e105" data-id="d45e105" data-element_type="column">
 			<div class="elementor-column-wrap elementor-element-populated">
 							<div class="elementor-widget-wrap">
-						<div class="elementor-element elementor-element-5a80fe9 elementor-widget elementor-widget-text-editor" data-id="5a80fe9" data-element_type="widget" data-widget_type="text-editor.default">
+						<div class="elementor-element elementor-element-e4df605 elementor-widget elementor-widget-text-editor" data-id="e4df605" data-element_type="widget" data-widget_type="text-editor.default">
 				<div class="elementor-widget-container">
-					<div class="elementor-text-editor elementor-clearfix"><h4>2.1 Boolean Values</h4><p><em>Boolean values </em>are expressions that are either <strong>true </strong>or <strong>false</strong>. While coding you often need to know if something is true or false.</p><p>When you compare 2 values, the expression is evaluated and Python returns a <strong>boolean answer.</strong> The following examples uses the operator ‘==’, which is used compare certain operands.</p><pre>7 == 7
-True<br>7 == 69<br>False</pre></div>
+					<div class="elementor-text-editor elementor-clearfix"><h4 style="font-size: 1.33333rem; font-style: normal;">3.1 Function calls</h4><div>In programming languages, a <em>function </em>is a <strong>sequence of statements</strong> that performs a <strong>computation</strong>. When you define a function you can give it a name that will be then used to call the function. An example of the function would be the <em>type() </em>function that we’ve already covered:</div><div> </div><pre>>>> type(PythonEducation.org)
+<class 'str'></pre></div>
 				</div>
 				</div>
-				<div class="elementor-element elementor-element-008e56c elementor-widget elementor-widget-text-editor" data-id="008e56c" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-element elementor-element-88616ea elementor-widget elementor-widget-text-editor" data-id="88616ea" data-element_type="widget" data-widget_type="text-editor.default">
 				<div class="elementor-widget-container">
-					<div class="elementor-text-editor elementor-clearfix"><p>There are in total <strong>8</strong> <em>comparison operators</em>, and ‘<em>==</em>‘ is one of them. The others are:</p><pre>a <strong>!=</strong> b     # a is not equal to b<br>a <strong>></strong> b      # a is greater than b<br>a <strong><</strong> b      # a is less than b<br>a <strong>>=</strong> b     # a is greater or equal to b<br>a <strong><=</strong> b     # a is less or equal to b<br>a <strong>is</strong> b     # a is the same as b<br>a <strong>is not</strong> b # a is not the same as b</pre></div>
-				</div>
-				</div>
-				<div class="elementor-element elementor-element-5012de8 elementor-widget elementor-widget-text-editor" data-id="5012de8" data-element_type="widget" data-widget_type="text-editor.default">
-				<div class="elementor-widget-container">
-					<div class="elementor-text-editor elementor-clearfix"><p>These signs are probably familiar to you, if you weren’t sleeping during your math classes 😆, but you have to be cautions because Python has different symbols from the mathematical symbols for the same operations. For example a common error would be to use ‘=’ instead of a ‘==’.  <span style="text-decoration: underline;">Remember</span>  a single equal sign (=) is used for assignments an double equal sign (==) for comparison. </p></div>
+					<div class="elementor-text-editor elementor-clearfix"><p>The name of the function is <strong>type</strong>. And the expression inside the parentheses is the input we’re passing the function also called <em>argument</em>. The function then “takes” the argument and “returns” a result, in this case whether it is a string, an integer or a float.</p></div>
 				</div>
 				</div>
 						</div>
@@ -186,144 +181,21 @@ True<br>7 == 69<br>False</pre></div>
 								</div>
 					</div>
 		</section>
-				<section class="elementor-section elementor-top-section elementor-element elementor-element-537bd46 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="537bd46" data-element_type="section">
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-81a3c02 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="81a3c02" data-element_type="section">
 						<div class="elementor-container elementor-column-gap-default">
 							<div class="elementor-row">
-					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-bec1121" data-id="bec1121" data-element_type="column">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-fcde4ac" data-id="fcde4ac" data-element_type="column">
 			<div class="elementor-column-wrap elementor-element-populated">
 							<div class="elementor-widget-wrap">
-						<div class="elementor-element elementor-element-8b1070c elementor-widget elementor-widget-text-editor" data-id="8b1070c" data-element_type="widget" data-widget_type="text-editor.default">
+						<div class="elementor-element elementor-element-a606c7b elementor-widget elementor-widget-text-editor" data-id="a606c7b" data-element_type="widget" data-widget_type="text-editor.default">
 				<div class="elementor-widget-container">
-					<div class="elementor-text-editor elementor-clearfix"><h4 style="font-size: 1.33333rem; font-style: normal;">2.2 Logical Operators</h4><p style="font-size: 18px; font-weight: 400;">There are in total <strong>3 </strong>logical operators: <strong>and</strong>, <strong>or</strong> and <strong>not</strong>. These 3 operators are actually fairly simple, because their meaning is very similar to their meaning in English.</p><pre>a > 50 <b>and</b> a < 100
-# The statement above is True only when <i>a </i>is greater than 50 <i>and </i>less than 100.</pre><pre>answer == 10 <strong>or</strong> answer == 10.5 
-# This statement is only True if the variable <em>answer </em>is <em>either</em> '10' or '10.5', otherwise it's False.</pre><pre>not ( Code Bootcamp > Pythoneducation.org ) <br># The <em>not</em> operator is basically the contrary in other words it negates the <i>boolean</i><br># <i>expression</i>. In this case the statement would only be True if <br># ( Code Bootcamp > Pythoneducation.org ) is false; that is Code Bootcamp is less than or equal to Pythoneducation.org. 😉</pre></div>
+					<div class="elementor-text-editor elementor-clearfix"><h4 style="font-size: 1.33333rem; font-style: normal;">3.2 Adding new functions</h4><p>Though out this course we only have been using Python built-in functions. But how to create <em>new functions?</em></p><p>Here is an example:</p><p><iframe loading="lazy" src="https://trinket.io/embed/python3/dbcec2cf9e" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen="allowfullscreen"></iframe></p></div>
 				</div>
 				</div>
-						</div>
-					</div>
-		</div>
-								</div>
-					</div>
-		</section>
-				<section class="elementor-section elementor-top-section elementor-element elementor-element-f1d1389 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="f1d1389" data-element_type="section">
-						<div class="elementor-container elementor-column-gap-default">
-							<div class="elementor-row">
-					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-23866e6" data-id="23866e6" data-element_type="column">
-			<div class="elementor-column-wrap elementor-element-populated">
-							<div class="elementor-widget-wrap">
-						<div class="elementor-element elementor-element-9e70929 elementor-widget elementor-widget-text-editor" data-id="9e70929" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-element elementor-element-05f2985 elementor-widget elementor-widget-text-editor" data-id="05f2985" data-element_type="widget" data-widget_type="text-editor.default">
 				<div class="elementor-widget-container">
-					<div class="elementor-text-editor elementor-clearfix"><h4 style="font-size: 1.33333rem; font-style: normal;">2.3 Conditional Execution</h4><p style="font-size: 18px; font-style: normal;"><span style="font-weight: 400;">The simplest form of conditional statements is an </span><b>if </b>statement. It looks something like this:</p><pre>if a < 0: <br>    print("a is negative.")</pre></div>
+					<div class="elementor-text-editor elementor-clearfix"><p>The empty parentheses after the function’s name indicate that the function is not taking any arguments. Later on in this course, we’ll learn how to build functions that take arguments.</p><p>The first line of the function is called the <em>header </em>and must end with a colon. Therefore, the rest is called the body and must be indented (4 spaces).</p><p>A function can also be used inside another function:</p><p><iframe loading="lazy" src="https://trinket.io/embed/python3/32d96543b4" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen="allowfullscreen"></iframe></p></div>
 				</div>
-				</div>
-				<div class="elementor-element elementor-element-2dff1f8 elementor-widget elementor-widget-text-editor" data-id="2dff1f8" data-element_type="widget" data-widget_type="text-editor.default">
-				<div class="elementor-widget-container">
-					<div class="elementor-text-editor elementor-clearfix"><p>The boolean expression after the <b>if </b>statement is called the <i>condition</i>. In this case the condition is ‘<i>a < 0′</i>, so translated into English is something like: “If a is less than 0, then…” and we end the if statement with a colon character (:). Afterwards comes the action we want Python to execute.</p><p>So if the logical condition is True, then Python executes the indented statement (The Action), if it’s False, so <i>a </i>is greater than 0 the indented statement is skipped.</p></div>
-				</div>
-				</div>
-				<div class="elementor-element elementor-element-536df2c elementor-widget elementor-widget-image" data-id="536df2c" data-element_type="widget" data-widget_type="image.default">
-				<div class="elementor-widget-container">
-					<div class="elementor-image">
-										<img width="768" height="459" src="https://pythoneducation.org/wp-content/uploads/2021/01/if_statement_flow_chart-768x459.png" class="attachment-medium_large size-medium_large" alt="" loading="lazy" srcset="https://pythoneducation.org/wp-content/uploads/2021/01/if_statement_flow_chart-768x459.png 768w,https://pythoneducation.org/wp-content/uploads/2021/01/if_statement_flow_chart-300x179.png 300w,https://pythoneducation.org/wp-content/uploads/2021/01/if_statement_flow_chart-1024x612.png 1024w,https://pythoneducation.org/wp-content/uploads/2021/01/if_statement_flow_chart.png 1250w" sizes="(max-width: 768px) 100vw, 768px">											</div>
-				</div>
-				</div>
-						</div>
-					</div>
-		</div>
-								</div>
-					</div>
-		</section>
-				<section class="elementor-section elementor-top-section elementor-element elementor-element-886ede5 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="886ede5" data-element_type="section">
-						<div class="elementor-container elementor-column-gap-default">
-							<div class="elementor-row">
-					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-6d425ec" data-id="6d425ec" data-element_type="column">
-			<div class="elementor-column-wrap elementor-element-populated">
-							<div class="elementor-widget-wrap">
-						<div class="elementor-element elementor-element-8d6090d elementor-widget elementor-widget-text-editor" data-id="8d6090d" data-element_type="widget" data-widget_type="text-editor.default">
-				<div class="elementor-widget-container">
-					<div class="elementor-text-editor elementor-clearfix"><h4 style="font-size: 1.33333rem; font-style: normal;">2.4 Alternative Execution</h4>
-<p style="font-size: 18px; font-style: normal; font-weight: 400;">You just learned how an If statement works, but what if you also want something to happen if the If statement is false? Well, there is where the If-else statement comes in. For better explanation let’s look at an example together:</p>
-<pre>if x > 0:
-    print("X is greater than 0.")
-else:
-    print("X is less than 0.")</pre>
-<p>In this example there are exactly <b>2 </b>possibilities: <i>x</i> being <i>greater </i>or <i>less </i>than 0. Our If statement can either be <u>True </u>or <u>False</u>. If our If statement is true it will normally execute his indented statement but now if it’s <b>false </b>it will execute the <b>Else’s intended statement</b>.</p>
-<p>Didn’t get it yet? No problem! Let’s try to understand it with some practice!</p></div>
-				</div>
-				</div>
-				<div class="elementor-element elementor-element-d28f2b8 elementor-widget elementor-widget-html" data-id="d28f2b8" data-element_type="widget" data-widget_type="html.default">
-				<div class="elementor-widget-container">
-			<iframe loading="lazy" src="https://trinket.io/embed/python3/5ed7699ed6" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>		</div>
-				</div>
-				<div class="elementor-element elementor-element-49be881 elementor-widget elementor-widget-text-editor" data-id="49be881" data-element_type="widget" data-widget_type="text-editor.default">
-				<div class="elementor-widget-container">
-					<div class="elementor-text-editor elementor-clearfix"></div>
-				</div>
-				</div>
-						</div>
-					</div>
-		</div>
-								</div>
-					</div>
-		</section>
-				<section class="elementor-section elementor-top-section elementor-element elementor-element-e92c592 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="e92c592" data-element_type="section">
-						<div class="elementor-container elementor-column-gap-default">
-							<div class="elementor-row">
-					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-be8dba4" data-id="be8dba4" data-element_type="column">
-			<div class="elementor-column-wrap elementor-element-populated">
-							<div class="elementor-widget-wrap">
-						<div class="elementor-element elementor-element-9fb79f9 elementor-widget elementor-widget-text-editor" data-id="9fb79f9" data-element_type="widget" data-widget_type="text-editor.default">
-				<div class="elementor-widget-container">
-					<div class="elementor-text-editor elementor-clearfix"><h4 style="font-size: 1.33333rem; font-style: normal;">2.5 Chained Conditionals</h4><p style="font-size: 18px; font-style: normal; font-weight: 400;">Sometimes there are far more than 2 possibilities so we would need to use what’s called a <em>chained conditional</em>:</p><pre>q1_answer = input("What is your answer to question Nr. 1? A or B: ")<br>if q1_answer == "a":<br>    print("Correct! 😃")<br>elif q1_answer == "b":<br>    print("Noppp")<br>else: # Here the Else statement is used to catch errors. If the answer was not A or B then it most be something else. So it is an invalid input.<br>    print("Invalid Input. You need to answer either with A or B.")</pre></div>
-				</div>
-				</div>
-				<div class="elementor-element elementor-element-4892309 elementor-widget elementor-widget-text-editor" data-id="4892309" data-element_type="widget" data-widget_type="text-editor.default">
-				<div class="elementor-widget-container">
-					<div class="elementor-text-editor elementor-clearfix"><p><strong>‘elif’ </strong>is an abbreviation for “else if” and can be used the in the same way as an If statement. And there isn’t any limit for e<em>lifs</em> statements, you use use as many as you want.</p></div>
-				</div>
-				</div>
-						</div>
-					</div>
-		</div>
-								</div>
-					</div>
-		</section>
-				<section class="elementor-section elementor-top-section elementor-element elementor-element-d597af2 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="d597af2" data-element_type="section">
-						<div class="elementor-container elementor-column-gap-default">
-							<div class="elementor-row">
-					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-e5bc6ed" data-id="e5bc6ed" data-element_type="column">
-			<div class="elementor-column-wrap elementor-element-populated">
-							<div class="elementor-widget-wrap">
-						<div class="elementor-element elementor-element-de5fc5d elementor-widget elementor-widget-text-editor" data-id="de5fc5d" data-element_type="widget" data-widget_type="text-editor.default">
-				<div class="elementor-widget-container">
-					<div class="elementor-text-editor elementor-clearfix"><h4 style="font-size: 1.33333rem; font-style: normal;">2.6 Nested Conditionals</h4><p style="font-size: 18px; font-style: normal; font-weight: 400;">One conditional can also be nested within another:</p><pre>if a == b:<br>    print("a is equal to b")<br>else:<br>    if a > b:<br>        print("a is greater than b")<br>    else:<br>        print("a is less than b")</pre></div>
-				</div>
-				</div>
-				<div class="elementor-element elementor-element-216de90 elementor-widget elementor-widget-text-editor" data-id="216de90" data-element_type="widget" data-widget_type="text-editor.default">
-				<div class="elementor-widget-container">
-					<div class="elementor-text-editor elementor-clearfix"><p>In the example above the first branch is a simple If statement and the second branch contains 2 branches of its own. Although there are 2 simple statements, nested conditionals become harder to read and understand so you should only use them when you really need to. 😉</p></div>
-				</div>
-				</div>
-						</div>
-					</div>
-		</div>
-								</div>
-					</div>
-		</section>
-				<section class="elementor-section elementor-top-section elementor-element elementor-element-8618642 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="8618642" data-element_type="section">
-						<div class="elementor-container elementor-column-gap-default">
-							<div class="elementor-row">
-					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-0b180f2" data-id="0b180f2" data-element_type="column">
-			<div class="elementor-column-wrap elementor-element-populated">
-							<div class="elementor-widget-wrap">
-						<div class="elementor-element elementor-element-f09bb8f elementor-widget elementor-widget-text-editor" data-id="f09bb8f" data-element_type="widget" data-widget_type="text-editor.default">
-				<div class="elementor-widget-container">
-					<div class="elementor-text-editor elementor-clearfix"><h4 style="font-size: 1.33333rem; font-style: normal;">2.7 Catching Exceptions using Try and Except</h4><p style="font-size: 18px; font-style: normal; font-weight: 400;">2 examples above we learned a method to catch errors using an Else statement, but this can’t always work. For instances if we are developing a program that prompts the user for an integer value and we want to create an Else statement that catch the errors, for that we must create a condition with every single letter and symbol the user could have typed, and that would be very time-consuming. That’s why we use the Try and Except method.</p></div>
-				</div>
-				</div>
-				<div class="elementor-element elementor-element-9f17ce4 elementor-widget elementor-widget-html" data-id="9f17ce4" data-element_type="widget" data-widget_type="html.default">
-				<div class="elementor-widget-container">
-			<iframe loading="lazy" src="https://trinket.io/embed/python3/da3e49fe64" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>		</div>
 				</div>
 						</div>
 					</div>
@@ -346,8 +218,25 @@ else:
 
 	<nav class="navigation post-navigation" role="navigation" aria-label="Posts">
 		<h2 class="screen-reader-text">Post navigation</h2>
-		<div class="nav-links"><div class="nav-next"><a href="https://pythoneducation.org/variables-expressions-and-statements/" rel="next">Next Post <span class="ast-right-arrow">→</span></a></div></div>
+		<div class="nav-links"><div class="nav-previous"><a href="https://pythoneducation.org/online-text-editor-compiler/" rel="prev"><span class="ast-left-arrow">←</span> Previous Post</a></div></div>
 	</nav>
+<div id="comments" class="comments-area">
+
+	
+	
+	
+		<div id="respond" class="comment-respond">
+		<h3 id="reply-title" class="comment-reply-title">Leave a Comment <small><a rel="nofollow" id="cancel-comment-reply-link" href="/wordpress/chapter-3-functions/#respond" style="display:none;">Cancel Reply</a></small></h3><form action="https://pythoneducation.org/wp-comments-post.php" method="post" id="ast-commentform" class="comment-form"><p class="comment-notes"><span id="email-notes">Your email address will not be published.</span> Required fields are marked <span class="required">*</span></p><div class="ast-row comment-textarea"><fieldset class="comment-form-comment"><div class="comment-form-textarea ast-col-lg-12"><label for="comment" class="screen-reader-text">Type here..</label><textarea id="comment" name="comment" placeholder="Type here.." cols="45" rows="8" aria-required="true"></textarea></div></fieldset></div><div class="ast-comment-formwrap ast-row"><p class="comment-form-author ast-col-xs-12 ast-col-sm-12 ast-col-md-4 ast-col-lg-4"><label for="author" class="screen-reader-text">Name*</label><input id="author" name="author" type="text" value="" placeholder="Name*" size="30" aria-required="true"></p>
+<p class="comment-form-email ast-col-xs-12 ast-col-sm-12 ast-col-md-4 ast-col-lg-4"><label for="email" class="screen-reader-text">Email*</label><input id="email" name="email" type="text" value="" placeholder="Email*" size="30" aria-required="true"></p>
+<p class="comment-form-url ast-col-xs-12 ast-col-sm-12 ast-col-md-4 ast-col-lg-4"><label for="url"><label for="url" class="screen-reader-text">Website</label><input id="url" name="url" type="text" value="" placeholder="Website" size="30"></label></p></div>
+<p class="comment-form-cookies-consent"><input id="wp-comment-cookies-consent" name="wp-comment-cookies-consent" type="checkbox" value="yes"> <label for="wp-comment-cookies-consent">Save my name, email, and website in this browser for the next time I comment.</label></p>
+<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Post Comment »"> <input type="hidden" name="comment_post_ID" value="945" id="comment_post_ID">
+<input type="hidden" name="comment_parent" id="comment_parent" value="0">
+</p></form>	</div>
+	
+	
+</div>
+
 					
 					
 				
@@ -646,7 +535,7 @@ var PT_CV_PAGINATION = {"first":"\u00ab","prev":"\u2039","next":"\u203a","last":
 <script src="https://pythoneducation.org/wp-content/plugins/elementor/assets/lib/swiper/swiper.min.js" id="swiper-js"></script>
 <script src="https://pythoneducation.org/wp-content/plugins/elementor/assets/lib/share-link/share-link.min.js" id="share-link-js"></script>
 <script id="elementor-frontend-js-before">
-var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false},"i18n":{"shareOnFacebook":"Share on Facebook","shareOnTwitter":"Share on Twitter","pinIt":"Pin it","download":"Download","downloadImage":"Download image","fullscreen":"Fullscreen","zoom":"Zoom","share":"Share","playVideo":"Play Video","previous":"Previous","next":"Next","close":"Close"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"version":"3.0.16","is_static":false,"legacyMode":{"elementWrappers":true},"urls":{"assets":"https:\/\/pythoneducation.org\/wp-content\/plugins\/elementor\/assets\/"},"settings":{"page":[],"editorPreferences":[]},"kit":{"global_image_lightbox":"yes","lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes","lightbox_title_src":"title","lightbox_description_src":"description"},"post":{"id":803,"title":"Chapter%202%20%E2%80%93%20Conditional%20Execution%20%E2%80%93%20PythonEducation","excerpt":"","featuredImage":"https:\/\/pythoneducation.org\/wp-content\/uploads\/2021\/01\/2.png"}};
+var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false},"i18n":{"shareOnFacebook":"Share on Facebook","shareOnTwitter":"Share on Twitter","pinIt":"Pin it","download":"Download","downloadImage":"Download image","fullscreen":"Fullscreen","zoom":"Zoom","share":"Share","playVideo":"Play Video","previous":"Previous","next":"Next","close":"Close"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"version":"3.0.16","is_static":false,"legacyMode":{"elementWrappers":true},"urls":{"assets":"https:\/\/pythoneducation.org\/wp-content\/plugins\/elementor\/assets\/"},"settings":{"page":[],"editorPreferences":[]},"kit":{"global_image_lightbox":"yes","lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes","lightbox_title_src":"title","lightbox_description_src":"description"},"post":{"id":945,"title":"Chapter%203%20%E2%80%93%20Functions%20%E2%80%93%20PythonEducation","excerpt":"","featuredImage":false}};
 </script>
 <script src="https://pythoneducation.org/wp-content/plugins/elementor/assets/js/frontend.min.js" id="elementor-frontend-js"></script>
 <script src="https://pythoneducation.org/wp-includes/js/underscore.min.js" id="underscore-js"></script>
