@@ -12,7 +12,7 @@
 	<atom:link href="http://localhost/wordpress/category/uncategorized/feed/" rel="self" type="application/rss+xml" />
 	<link>http://pythoneducation.org/</link>
 	<description>Learn Python for free!</description>
-	<lastBuildDate>Thu, 15 Apr 2021 14:40:28 +0000</lastBuildDate>
+	<lastBuildDate>Fri, 16 Apr 2021 11:41:33 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
@@ -755,6 +755,138 @@ else:
 		]]></content:encoded>
 					
 					<wfw:commentRss>https://pythoneducation.org/chapter-5-iteration/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Chapter 5 &#8211; Strings</title>
+		<link>https://pythoneducation.org/chapter-5-strings/</link>
+					<comments>https://pythoneducation.org/chapter-5-strings/#respond</comments>
+		
+		<dc:creator><![CDATA[mig]]></dc:creator>
+		<pubDate>Fri, 16 Apr 2021 11:01:30 +0000</pubDate>
+				<category><![CDATA[Python]]></category>
+		<category><![CDATA[Uncategorized]]></category>
+		<category><![CDATA[chapter 5]]></category>
+		<category><![CDATA[looping]]></category>
+		<category><![CDATA[python]]></category>
+		<category><![CDATA[pythoneducation]]></category>
+		<category><![CDATA[string slices]]></category>
+		<category><![CDATA[strings]]></category>
+		<guid isPermaLink="false">https://pythoneducation.org/?p=980</guid>
+
+					<description><![CDATA[5.1 A string is a sequence A string is nothing more than a sequence of character, which can be accessed one at the time:&#160; fruit = "banana" letter = fruit[1] Using the brackets expression the second statement extracts the character at index position 1 and assigns into the variable letter. But you might not get &#8230;<p class="read-more"> <a class="" href="https://pythoneducation.org/chapter-5-strings/"> <span class="screen-reader-text">Chapter 5 &#8211; Strings</span> Read More &#187;</a></p>]]></description>
+										<content:encoded><![CDATA[		<div data-elementor-type="wp-post" data-elementor-id="980" class="elementor elementor-980" data-elementor-settings="[]">
+						<div class="elementor-inner">
+							<div class="elementor-section-wrap">
+							<section class="elementor-section elementor-top-section elementor-element elementor-element-75bc270 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="75bc270" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-e9cc716" data-id="e9cc716" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-c195d8b elementor-widget elementor-widget-text-editor" data-id="c195d8b" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><h4 style="font-size: 1.33333rem; font-style: normal;">5.1 A string is a sequence</h4><div style="font-size: 18px; font-style: normal; font-weight: 400;">A string is nothing more than a sequence of character, which can be accessed one at the time:</div><div> </div><pre>fruit = "banana"
+letter = fruit[1]</pre><p>Using the brackets expression the second statement extracts the character at index position 1 and assigns into the variable <em>letter</em>.</p><p>But you might not get what you expect:</p><pre>&gt;&gt;&gt; print(letter)
+a</pre><p>You probably expected the letter &#8220;<strong>b</strong>&#8221; as it is the first letter in the word banana. But Python works with index&#8217;s and the first character is the 0th position and the second in the 1th position. </p><p>  </p></div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-75f91fd elementor-widget elementor-widget-image" data-id="75f91fd" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image">
+										<img width="525" height="160" src="https://pythoneducation.org/wp-content/uploads/2021/04/banana.png" class="attachment-large size-large" alt="" loading="lazy" srcset="https://pythoneducation.org/wp-content/uploads/2021/04/banana.png 525w, https://pythoneducation.org/wp-content/uploads/2021/04/banana-300x91.png 300w" sizes="(max-width: 525px) 100vw, 525px" />											</div>
+				</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-c1f6e13 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="c1f6e13" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-238f4ef" data-id="238f4ef" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-1f185ff elementor-widget elementor-widget-text-editor" data-id="1f185ff" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><h4 style="font-size: 1.33333rem; font-style: normal;">5.2 Getting the length of a string using len</h4><div style="font-size: 18px; font-style: normal; font-weight: 400;"><em>len</em> is one of many built-in functions Python has, which returns the number of characters in a string:</div><div> </div><pre>&gt;&gt;&gt; fruit = "banana"<br />&gt;&gt;&gt; len(fruit)<br />6</pre></div>
+				</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-fef8187 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="fef8187" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-d78a7e2" data-id="d78a7e2" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-50b2aaf elementor-widget elementor-widget-text-editor" data-id="50b2aaf" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><h4 style="font-size: 1.33333rem; font-style: normal;">5.3 String slices</h4><div style="font-size: 18px; font-style: normal; font-weight: 400;">A portion of a string is called a <em>slice.</em> Selecting a slice is similar to selecting a character:</div><div> </div><p><iframe loading="lazy" src="https://trinket.io/embed/python3/24dc3d85da" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen="allowfullscreen"></iframe></p></div>
+				</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-b1f8e98 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="b1f8e98" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-aa60507" data-id="aa60507" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-7bb270c elementor-widget elementor-widget-text-editor" data-id="7bb270c" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><p>The operator returns the part of the string from the <strong>x </strong>position to the <strong>y </strong>position, including the first and <strong>excluding </strong>the last.</p></div>
+				</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-97559cb elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="97559cb" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-a40bb70" data-id="a40bb70" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-a894bb3 elementor-widget elementor-widget-text-editor" data-id="a894bb3" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><h4 style="font-size: 1.33333rem; font-style: normal;">5.4 Looping and counting</h4>
+<div style="font-size: 18px; font-style: normal; font-weight: 400;">Using what I&#8217;ve learned in the previous chapter we can build a program that counts in number of times a specific character appears in a string:
+</div>
+<iframe loading="lazy" src="https://trinket.io/embed/python3/2ee22462b0" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe></div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-2472e0e elementor-widget elementor-widget-text-editor" data-id="2472e0e" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><p>The <em>counter</em> is a new pattern of computation we can learn from this program. We initialize the variable count with 0 and every time the loop founds an &#8220;o&#8221; we add 1 to the variable. When there is no &#8220;o&#8221; found the loop just continues. </p></div>
+				</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+						</div>
+						</div>
+					</div>
+		]]></content:encoded>
+					
+					<wfw:commentRss>https://pythoneducation.org/chapter-5-strings/feed/</wfw:commentRss>
 			<slash:comments>0</slash:comments>
 		
 		
